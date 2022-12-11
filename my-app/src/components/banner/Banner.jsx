@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import style from './banner.module.css';
 const Banner =()=>{
     return(
@@ -10,9 +11,13 @@ const Banner =()=>{
                 без комиссии!
             </span>
             <br/>
+
+            <Link exact to={'/form'}>
             <button className={style.banner_btn}>
             Оставить заявку
             </button>
+            </Link>
+            
           </p>
 
         </div>
